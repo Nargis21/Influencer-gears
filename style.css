@@ -7,7 +7,7 @@ header{
     margin-left: 8%;
     height: 100px;
     width: 400px;
-    position: static;
+    display: block;
 }
 .title-1{
     font-size: 2em;
@@ -60,6 +60,7 @@ background-color: salmon;
 }
 .container-2{
     width: 40%;
+    display: block;
 }
 .container-2 img{
     width: 100%;
@@ -105,7 +106,7 @@ background-color: salmon;
 }
 /* section-3 */
 .section-3{
-    height: 700px;
+    height: 500px;
 }
 .community{
     display: flex;
@@ -155,10 +156,7 @@ margin: 0px 16px;
 
 /* Mobile devices */
 @media screen and (Max-width:688px){
-    .container, .popular-collection, .community{
-        width: 100%;
-    }
-    
+
     .container, .popular-collection, .community{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -168,10 +166,6 @@ margin: 0px 16px;
 }
 /* Tablet devices */
 @media screen and (Min-width:689px) and (Max-width: 992px) {
-    .container, .popular-collection, .community{
-        width: 100%;
-    }
-    
     .container, .popular-collection, .community{
         grid-template-columns: repeat(2, 1fr);
     }
